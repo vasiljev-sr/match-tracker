@@ -1,0 +1,37 @@
+@import "fonts.css";
+@import "normalize.css";
+@import "variables.css";
+
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+h1 {
+    font-family: var(--font-family-accent);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+
+:focus-visible {
+    outline: 2px dashed var(--color-light);
+    outline-offset: 4px;
+    transition-duration: 0s !important;
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
