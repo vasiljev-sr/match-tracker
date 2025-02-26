@@ -1,44 +1,38 @@
 .Button {
-    cursor: pointer;
-    padding: 1rem 3rem;
-    border-radius: 0.25rem;
-    color: var(--color-light);
-    background-color: var(--color-red);
-    border: none;
-    font-weight: 600;
-
+  cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: 0.25rem;
+  color: var(--color-light);
+  background-color: var(--color-red);
+  border: none;
+  font-weight: 600;
 }
 
 .Button:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .Button:after {
-    content: '';
-    display: inline-flex;
-    background-image: url("../../assets/images/refresh.svg");
-    width: 26px;
-    height: 26px;
-    margin-left: 0.5rem;
-    vertical-align: middle;
-
+  content: '';
+  display: inline-flex;
+  background-image: url('../../assets/images/refresh.svg');
+  width: 26px;
+  height: 26px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
 }
 
 .Button:active {
-    background-color: var(--color-red-10);
+  background-color: var(--color-red-10);
 }
-
-
 
 .outlined {
-    background-color: unset;
+  background-color: unset;
 }
 
-
-
 .Button.disabled {
-    background-color: var(--color-red-20);
-    color: var(--color-grey);
-    pointer-events: unset;
-    cursor: auto;
+  background-color: var(--color-red-20);
+  color: var(--color-grey);
+  pointer-events: unset;
+  cursor: auto;
 }
