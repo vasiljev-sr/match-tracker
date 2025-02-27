@@ -1,0 +1,24 @@
+.CardStatus {
+    font-weight: 600;
+    padding-block: 6px;
+    padding-inline: 0.5rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    min-width: 92px;
+    text-align: center;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+
+.CardStatus.live{
+    background-color: var(--color-green);
+}
+
+.CardStatus.finished{
+    background-color: var(--color-red);
+}
+
+.CardStatus.preparing{
+    background-color: var(--color-orange);
+}
