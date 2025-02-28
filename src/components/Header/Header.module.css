@@ -1,14 +1,19 @@
 .Header {
-        padding-block: 2rem;
+  padding-block: 2rem;
 }
 
 .box {
- display: flex;
- justify-content: space-between;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .h1 {
-    font-size: 3rem;
+  font-size: 3rem;
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }

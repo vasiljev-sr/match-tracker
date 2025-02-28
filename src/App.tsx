@@ -1,11 +1,15 @@
-import './App.css';
+import './assets/styles/main.css';
+import { Header } from './components';
+import { MatchList } from './components/MatchList/MatchList.tsx';
 
 const App = () => {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <>
+      <Header />
+      <main>
+        <MatchList />
+      </main>
+    </>
   );
 };
 

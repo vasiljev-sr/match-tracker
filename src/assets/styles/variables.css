@@ -1,7 +1,7 @@
 :root {
   --color-light: #ffffff;
 
-  --color-dark: #141414;
+  --color-dark: #06080c;
   --color-dark-10: #0b0e12;
 
   --color-red: #eb0237;
@@ -17,6 +17,8 @@
 
   --container-width: 1836px;
   --container-padding-x: 1rem;
+
+  --border-radius: 0.25rem;
 
   --transition-duration: 0.2s;
 }

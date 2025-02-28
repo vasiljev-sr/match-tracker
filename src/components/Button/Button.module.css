@@ -1,7 +1,7 @@
 .Button {
   cursor: pointer;
   padding: 1rem 3rem;
-  border-radius: 0.25rem;
+  border-radius: var(--border-radius);
   color: var(--color-light);
   background-color: var(--color-red);
   border: none;
