@@ -2,7 +2,7 @@
     font-weight: 600;
     padding-block: 6px;
     padding-inline: 0.5rem;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     display: inline-block;
     min-width: 92px;
     text-align: center;
@@ -11,14 +11,14 @@
 }
 
 
-.CardStatus.live{
+.CardStatus.Ongoing{
     background-color: var(--color-green);
 }
 
-.CardStatus.finished{
+.CardStatus.Finished{
     background-color: var(--color-red);
 }
 
-.CardStatus.preparing{
+.CardStatus.Scheduled{
     background-color: var(--color-orange);
 }

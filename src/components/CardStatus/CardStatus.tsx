@@ -1,17 +1,17 @@
 import React from 'react';
 import cls from 'classnames';
 import sx from './CardStatus.module.css';
-import { TCardStatus } from './types';
+import { TMatchStatus } from './types';
 
 interface CardStatusProps {
   className?: string;
-  type: TCardStatus;
+  type: TMatchStatus;
 }
 
-const statusNames: Record<TCardStatus, string> = {
-  live: 'Live',
-  finished: 'Finished',
-  preparing: 'Match preparing',
+const statusNames: Record<TMatchStatus, string> = {
+  Ongoing: 'Live',
+  Finished: 'Finished',
+  Scheduled: 'Match preparing',
 };
 export const CardStatus = (props: CardStatusProps) => {
   const { className, type } = props;
