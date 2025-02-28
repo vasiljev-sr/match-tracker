@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from 'react';
-import styles from './Button.module.css';
+import sx from './Button.module.css';
 import cls from 'classnames';
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -11,7 +11,7 @@ export const Button = (props: ButtonProps) => {
 
   return (
     <button
-      className={cls(styles.Button, className, { [styles.disabled]: disabled })}
+      className={cls(sx.Button, className, { [sx.disabled]: disabled })}
       type={'button'}
       disabled={disabled}
       {...restProps}
