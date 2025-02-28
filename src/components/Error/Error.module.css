@@ -1,0 +1,9 @@
+.Error {
+  background-color: var(--color-dark-10);
+  border-radius: var(--border-radius);
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.125rem;
+}
