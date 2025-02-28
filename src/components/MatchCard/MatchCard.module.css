@@ -1,0 +1,36 @@
+.MatchCard {
+    padding: 2rem 1rem;
+    background-color: var(--color-dark-10);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+
+}
+
+.homeTeam {
+
+}
+
+.awayTeam{
+
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.score {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.score p {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
