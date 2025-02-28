@@ -1,1 +1,1 @@
-export type TCardStatus = 'live' | 'finished' | 'preparing';
+export type TMatchStatus = 'Ongoing' | 'Finished' | 'Scheduled';
