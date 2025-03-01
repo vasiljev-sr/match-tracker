@@ -14,7 +14,7 @@ export const Header = (props: HeaderProps) => {
   return (
     <header className={cls(sx.Header, className, 'container')}>
       <div className={sx.box}>
-        <h1 className={sx.h1}>Match Track</h1>
+        <h1 className={sx.h1}>Match Tracker</h1>
         <div className={sx.actions}>
           <Error />
           <Button onClick={() => mutate(MATCH_API_KEY)}>Обновить</Button>
