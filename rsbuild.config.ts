@@ -6,4 +6,7 @@ export default defineConfig({
   output: {
     assetPrefix: '/match-tracker/',
   },
+  html: {
+    title: 'Match Tracker',
+  },
 });

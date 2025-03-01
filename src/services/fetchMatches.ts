@@ -3,7 +3,7 @@ import useSWR from 'swr';
 
 export const BASE_API_URL = 'https://app.ftoyd.com/fronttemp-service';
 
-export const MATCH_API_KEY =  `matches`
+export const MATCH_API_KEY = `matches`;
 
 export interface MatchItem {
   awayScore: number;
