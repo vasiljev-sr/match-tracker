@@ -3,6 +3,8 @@ import useSWR from 'swr';
 
 export const BASE_API_URL = 'https://app.ftoyd.com/fronttemp-service';
 
+export const MATCH_API_KEY =  `matches`
+
 export interface MatchItem {
   awayScore: number;
   awayTeam: Team;
@@ -39,7 +41,7 @@ const fetchMatches = async (): Promise<ApiMatchesResponse> => {
 
 export function useMatches() {
   const { data, error, isLoading } = useSWR<ApiMatchesResponse>(
-    `matches`,
+    MATCH_API_KEY,
     fetchMatches,
   );
 

@@ -4,6 +4,7 @@ import sx from './Header.module.css';
 import { Button } from '../Button/Button';
 import { mutate } from 'swr';
 import { Error } from '../Error/Error';
+import { MATCH_API_KEY } from '../../services/fetchMatches.ts';
 
 interface HeaderProps {
   className?: string;
@@ -16,7 +17,7 @@ export const Header = (props: HeaderProps) => {
         <h1 className={sx.h1}>Match Track</h1>
         <div className={sx.actions}>
           <Error />
-          <Button onClick={() => mutate('matches')}>Обновить</Button>
+          <Button onClick={() => mutate(MATCH_API_KEY)}>Обновить</Button>
         </div>
       </div>
     </header>
