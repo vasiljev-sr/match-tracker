@@ -3,7 +3,7 @@ import cls from 'classnames';
 import sx from './MatchCard.module.css';
 import { MatchItem } from '../../services/fetchMatches.ts';
 import teamIcon from '../../assets/images/team-icon.svg';
-import { CardStatus } from '../CardStatus/CardStatus.tsx';
+import { CardStatus } from '../CardStatus/CardStatus';
 interface MatchCardProps {
   className?: string;
   data: MatchItem;
@@ -23,14 +23,14 @@ export const MatchCard = (props: MatchCardProps) => {
           src={teamIcon}
           alt={'team icon'}
         />
-        <h3 className={'asd'}>{awayTeam.name}</h3>
+        <h3 className={sx.teamName}>{awayTeam.name}</h3>
       </div>
       <div className={sx.score}>
         <p>{`${awayScore} : ${homeScore}`}</p>
         <CardStatus type={status} />
       </div>
       <div className={sx.team}>
-        <h3>{homeTeam.name}</h3>
+        <h3 className={sx.teamName}>{homeTeam.name}</h3>
         <img
           className={sx.icon}
           width={48}

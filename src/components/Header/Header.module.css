@@ -7,13 +7,25 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .h1 {
   font-size: 3rem;
 }
+
 .actions {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .actions {
+    flex-basis: 100%;
+  }
+
+  .actions button {
+    width: 100%;
+  }
 }

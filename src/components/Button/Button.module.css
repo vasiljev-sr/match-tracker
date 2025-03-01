@@ -8,10 +8,6 @@
   font-weight: 600;
 }
 
-.Button:hover {
-  opacity: 0.8;
-}
-
 .Button:after {
   content: '';
   display: inline-flex;
@@ -35,4 +31,10 @@
   color: var(--color-grey);
   pointer-events: unset;
   cursor: auto;
+}
+
+@media (hover: hover) {
+  .Button:hover {
+    opacity: 0.8;
+  }
 }

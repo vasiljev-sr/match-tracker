@@ -2,8 +2,8 @@ import React from 'react';
 import cls from 'classnames';
 import sx from './MatchList.module.css';
 import { useMatches } from '../../services/fetchMatches.ts';
-import { MatchCard } from '../MatchCard/MatchCard.tsx';
-import { MatchCardSkeleton } from '../MatchCard/MatchCardSkeleton.tsx';
+import { MatchCard } from '../MatchCard/MatchCard';
+import { MatchCardSkeleton } from '../MatchCard/MatchCardSkeleton';
 
 interface MatchListProps {
   className?: string;

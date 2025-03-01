@@ -20,5 +20,3 @@ export const Error = (props: ErrorProps) => {
     </div>
   );
 };
-
-export default Error;

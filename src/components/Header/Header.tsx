@@ -1,9 +1,9 @@
 import React from 'react';
 import cls from 'classnames';
 import sx from './Header.module.css';
-import { Button } from '../Button/Button.tsx';
+import { Button } from '../Button/Button';
 import { mutate } from 'swr';
-import Error from '../Error/Error.tsx';
+import { Error } from '../Error/Error';
 
 interface HeaderProps {
   className?: string;
